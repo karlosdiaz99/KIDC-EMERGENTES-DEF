@@ -39,7 +39,7 @@ function buscarTweets(){
 
             var _celda = document.createElement("td");
             var _botonAgregar = document.createElement("button");
-            _botonAgregar.textContent="retuit";
+            _botonAgregar.textContent="retweet";
             
             _botonAgregar.id = i;
             _botonAgregar.addEventListener("click", function(obj_evento){funcionAgregar(titulo);},false);
