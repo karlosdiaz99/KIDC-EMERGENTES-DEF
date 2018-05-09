@@ -21,7 +21,7 @@
       <input type="text" id="cantidad"  placeholder="Cantidad">
       <button onclick="search()" class="waves-effect waves-light btn #000000 black" id="search-button">BUSCAR</button>
     </div>
-    <tr><td><div style="overflow-y:auto;" class="card-panel teal" id=map max-height: 200px>
+    <tr><td><div style="overflow-y:auto;" id=map>
     </div></td></tr>
   </table>
 
@@ -43,12 +43,14 @@
     </div>
     </td></tr>
     </table>
-      <div id="fecha" class="card-panel teal">
+
+    <div id="fecha" class="card-panel teal">
       <label>Inicio</label>
-      <input type="text" id="inicio" value='2018-05-09'>
+      <input type="text" id="inicio" value='2018-05-08T10:40:00-06:00'>
       <label>Fin</label>
-      <input  type="text" id="fin"   value='2018-05-09'>
+      <input  type="text" id="fin"   value='2018-05-08T11:40:00-07:00'>
     </div>
+
 <div id="controles">
       <button  onclick="botonAtras()" id="authorize-button" class="waves-effect waves-light btn #000000 black" ><===</button>
       <button onclick="botonSiguiente()" id="signout-button" class="waves-effect waves-light btn #000000 black" >===></button>
