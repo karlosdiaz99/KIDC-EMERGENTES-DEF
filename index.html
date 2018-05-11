@@ -14,7 +14,7 @@
     <title>MASHUP_KIDC</title>
     </style>
   </head>
-  <body style="background-color:#2EFEF7;">
+  <body style="background-color:#000000;">
     <table>
     <div class="card-panel teal" >
       <input type="text" id="query"  placeholder="Elemento a buscar">
@@ -23,6 +23,20 @@
     </div>
     <tr><td><div style="overflow-y:auto;" id=map class="card-panel teal">
     </div></td></tr>
+
+<div id="controles">
+      <button  onclick="botonAtras()" id="authorize-button" class="waves-effect waves-light btn #000000 black" ><===</button>
+      <button onclick="botonSiguiente()" id="signout-button" class="waves-effect waves-light btn #000000 black" >===></button>
+    </div>
+    <div id=div-videos>
+      <table>
+        <tbody>
+          <tr style="overflow-y:auto;" id="videos"></tr>
+        </tbody>
+      </table>
+    </div>
+
+
   </table>
 
 
@@ -51,17 +65,6 @@
       <input  type="text" id="fin"   value='2018-05-08T11:40:00-07:00'>
     </div>
 
-<div id="controles">
-      <button  onclick="botonAtras()" id="authorize-button" class="waves-effect waves-light btn #000000 black" ><===</button>
-      <button onclick="botonSiguiente()" id="signout-button" class="waves-effect waves-light btn #000000 black" >===></button>
-    </div>
-    <div id=div-videos>
-      <table>
-        <tbody>
-          <tr style="overflow-y:auto;" id="videos"></tr>
-        </tbody>
-      </table>
-    </div>
 
     
 

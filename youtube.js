@@ -79,7 +79,7 @@ function encuentra(){
     if(auxcantidad< 10){
         agregarVideos(0, auxcantidad);
     }else{
-         agregarVideos(0, 10);
+         agregarVideos(0, 5);
     }
     for(var i = 0; i < videosGeneral.length; i++){
         buscar(videosGeneral[i]);
@@ -134,7 +134,7 @@ function botonSiguiente(){
     auxcantidad = auxcantidad - 10;
     contador = contador + 10;
     borrar();
-    if(auxcantidad > 10){
+    if(auxcantidad >= 10){
         agregarVideos(contador, contador+10);
     }else{
         console.log("no entro");
@@ -145,7 +145,7 @@ function botonSiguiente(){
 
 function botonAtras(){
     borrar();
-    if(contador > 0){
+    if(contador >= 0){
         agregarVideos(contador, contador + 10);
     }
     auxcantidad = auxcantidad + 10;
