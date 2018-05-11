@@ -14,33 +14,36 @@
     <title>MASHUP_KIDC</title>
     </style>
   </head>
-  <body style="background-color:#FF0000;">
-    <table style="background-color:darkkhaki;">
+  <body style="background-color:#2EFEF7;">
+    <table>
     <div class="card-panel teal" >
       <input type="text" id="query"  placeholder="Elemento a buscar">
       <input type="text" id="cantidad"  placeholder="Cantidad">
       <button onclick="search()" class="waves-effect waves-light btn #000000 black" id="search-button">BUSCAR</button>
     </div>
-    
+    <tr><td><div style="overflow-y:auto;" id=map class="card-panel teal">
+    </div></td></tr>
   </table>
-<table>
-  <tr>
-<div id="controles">
-      <button  onclick="botonAtras()" id="authorize-button" class="waves-effect waves-light btn #000000 black" ><===</button>
-      <button onclick="botonSiguiente()" id="signout-button" class="waves-effect waves-light btn #000000 black" >===></button>
-    </div>
-    <div id=div-videos>
+
+
+
+    <table>
+    
+    <tr><td>
+      <div id="tablatweets" style="overflow-y:auto;" class="card-panel teal"> 
       <table>
-        <tbody>
-          <td style="overflow-y:auto;" id="videos"></td>
+        <thead>
+          <tr>
+            <th>Tweets</th>
+          </tr>
+        </thead>
+        <tbody id="tcuerpot">
         </tbody>
       </table>
     </div>
-</tr>
-<tr>
-<tr><td><div style="overflow-y:auto;" id=map >
-    </div></td></tr></tr>
+    </td></tr>
     </table>
+
     <div id="fecha" class="card-panel teal">
       <label>Inicio</label>
       <input type="text" id="inicio" value='2018-05-08T10:40:00-06:00'>
@@ -48,6 +51,17 @@
       <input  type="text" id="fin"   value='2018-05-08T11:40:00-07:00'>
     </div>
 
+<div id="controles">
+      <button  onclick="botonAtras()" id="authorize-button" class="waves-effect waves-light btn #000000 black" ><===</button>
+      <button onclick="botonSiguiente()" id="signout-button" class="waves-effect waves-light btn #000000 black" >===></button>
+    </div>
+    <div id=div-videos>
+      <table>
+        <tbody>
+          <tr style="overflow-y:auto;" id="videos"></tr>
+        </tbody>
+      </table>
+    </div>
 
     
 
